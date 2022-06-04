@@ -6,16 +6,15 @@ font-family: 'Roboto', sans-serif;
 }
 
 .sitebody{
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
   min-height: 100vh;
 }
 .box1{
-  /* position:sticky; */
-  color: aquamarine;
-  background-color: rgb(9, 255, 0);
+  /* color: aquamarine; */
+  /* background-color: rgb(9, 255, 0); */
   height: 100%;
   z-index: 3;
   /* display: block; */
@@ -24,17 +23,16 @@ font-family: 'Roboto', sans-serif;
 }
 .box2{
   z-index: 2;
-  /* position: relative; */
-  /* grid-row-start: 3;
-  grid-row-end: 5; */
   width: 100%;
   color: aquamarine;
-  background-color: blue;
+  /* background-color: blue; */
   /* display: grid; */
   display: flex;
   flex-direction: column;
   /* justify-content:space-between; */
   gap: 2rem;
+  
+
 
   
 }
@@ -48,9 +46,13 @@ font-family: 'Roboto', sans-serif;
   line-height: 0.82;
   margin-left: 12%;
 }
-/* .photograph{
-  display: inline-block
-} */
+.photograph{
+  text-rendering: optimizeSpeed;
+  font-weight: 600;
+}
+.name{
+  font-weight: 300;
+}
 
 .box2>img{
   /* padding: 10px; */
@@ -61,7 +63,7 @@ img{
 }
 
 .picture-box{
-  background-color: brown;
+  /* background-color: brown; */
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +75,7 @@ img{
 
 @media screen and (max-width:576px){
   .sitebody{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100vw;
     display: grid;
     /* grid-template-columns: 0fr 4fr; */
@@ -92,8 +94,8 @@ img{
   .box1{
     /* display: none; */
     visibility:hidden;
-    color: aquamarine;
-    background-color: rgb(255, 60, 0);
+    /* color: aquamarine; */
+    /* background-color: rgb(255, 60, 0); */
     margin: 0;
   }
 

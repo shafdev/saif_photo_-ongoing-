@@ -6,7 +6,7 @@ return(
     <div className="box1">
     <div className="header">
         <span className="photograph">PHOTOGRAPHY</span>
-        <span>SAIF KHAN</span>
+        <span className="name">SAIF KHAN</span>
     </div>
     </div>
        
