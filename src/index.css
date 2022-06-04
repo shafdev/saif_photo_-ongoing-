@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+font-family: 'Roboto', sans-serif;
+}
+
+.sitebody{
+  background-color: aqua;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  min-height: 100vh;
+}
+.box1{
+  /* position:sticky; */
+  color: aquamarine;
+  background-color: rgb(9, 255, 0);
+  height: 100%;
+  z-index: 3;
+  /* display: block; */
+
+
+}
+.box2{
+  z-index: 2;
+  /* position: relative; */
+  /* grid-row-start: 3;
+  grid-row-end: 5; */
+  width: 100%;
+  color: aquamarine;
+  background-color: blue;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content:space-between; */
+  gap: 2rem;
+
+  
+}
+
+.header{
+  position:fixed;
+  display: grid;
+  writing-mode: vertical-rl;
+  color: #000;
+  font-size: 3.5vw;
+  line-height: 0.82;
+  margin-left: 12%;
+}
+/* .photograph{
+  display: inline-block
+} */
+
+.box2>img{
+  /* padding: 10px; */
+}
+img{
+  /* object-fit: contain; */
+  width: 100%;
+}
+
+.picture-box{
+  background-color: brown;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.7rem;
+  /* grid-auto-rows: minmax(200px,auto); */
+}
+
+
+
+@media screen and (max-width:576px){
+  .sitebody{
+    background-color: aqua;
+    width: 100vw;
+    display: grid;
+    /* grid-template-columns: 0fr 4fr; */
+    grid-template-columns: 0% 100%;
+
+
+  }
+  .picture-box{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+   
+  }
+  .box1{
+    /* display: none; */
+    visibility:hidden;
+    color: aquamarine;
+    background-color: rgb(255, 60, 0);
+    margin: 0;
+  }
+
+  .box2{
+    color: aquamarine;
+
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    
+
+  }
+
+  img{
+    object-fit:cover;
+    height:auto;
+  }
+  
+}
+
+@media screen and (min-width:576px) and (max-width:1100px){
+  .picture-box{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    width: 100%;
+    /* display: grid; */
+
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 1rem; */
+    /* justify-items: center; */
+   
+  }
+  .box2{
+    /* justify-content:space-around; */
+  }
+  
+  .header{
+    font-size: 4.5vw;
+    /* margin-left: 10%; */
+    margin-right: 20%;
+  }
+
+}
