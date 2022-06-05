@@ -116,16 +116,41 @@ img{
   }
 
   .header{
-    position:relative;
-     /* display: grid;
+    position: absolute;
+    /* background-color: aqua; */
+    /* display: flex; */
+    /* position:; */
+    /* display: inline-block; */
+    /* display: grid;
     writing-mode: vertical-rl;
     color: #000;
-    
     line-height: 0.82; */
-    font-size: 5.5vw;
-    margin-left: 80%; 
+    width: auto;
+    font-size: 7vw;
+    /* margin-left: 80%;  */
+    /* margin-right: 30px; */
+    right: 10%;
     margin-top: 10%;
+    animation-name: head-transition;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    /* animation-timing-function: cubic-bezier(0.2, 0.56, 0.64, 0.92); */
+    animation-timing-function: ease-out;
   }
+
+  @keyframes head-transition {
+    0%{opacity: 0;
+        transform: translate(-15px);
+        }
+
+    50%{opacity: 0.5;
+        transform: translate(-7);
+    }
+    100%{opacity: 1;
+          transform: translate(0px);
+        }
+  }
+
 
   img{
     object-fit:cover;
@@ -155,6 +180,9 @@ img{
     font-size: 4.5vw;
     /* margin-left: 10%; */
     margin-right: 20%;
+
   }
+
+
 
 }
