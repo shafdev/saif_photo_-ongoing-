@@ -143,8 +143,9 @@ img{
         transform: translate(-15px);
         }
 
-    50%{opacity: 0.5;
-        transform: translate(-7);
+    50%{
+      /* opacity: 0.4; */
+        /* transform: translate(-7px); */
     }
     100%{opacity: 1;
           transform: translate(0px);
